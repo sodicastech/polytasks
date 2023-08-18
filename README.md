@@ -14,7 +14,6 @@ inpired by the work of [uniquepointer](https://github.com/uniquepointer) on his 
 
 polytasks requires a configuration file called polytasks_config.py in the same folder as the polytasks.py script.
 
-
 | Setting | Description |
 | --- | --- |
 | `use_styling = True` | Set False to disable window name styling |
@@ -27,3 +26,9 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 | `name_option = "application_name"` | Default: Choose from "window_title", "window_class", "application_name". see name options table bellow for more information |
 | `forbidden_classes = ["polybar"]` | List of forbidden classes
 | `text_case_option = "normal"` | Default: Choose from "normal", "uppercase", "lowercase", "capitalized" |
+
+| Option | Description | 
+| --- | --- | 
+| `window_title` | Display current window title. | 
+| `window_class` | Display the windows class. | 
+| `application_name` | Display application name, tries to get the application name from its *.desktop file if can't find displays the window class. |
