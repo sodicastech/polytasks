@@ -71,7 +71,7 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 * Add the following module to your polybar config replacing the $Desktop_ID with your own:
 
 ```ini
-  [module/polytasks]
+[module/polytasks]
 type = custom/script
 exec = ~/.config/polybar/scripts/polywins.sh $Desktop_ID 2>/dev/null
 format = <label>
