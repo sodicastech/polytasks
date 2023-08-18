@@ -30,12 +30,12 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 
 | Styling variables | Description |
 | --- | --- |
-| `active_text_color = "#88c0d0"' | Active window name foregound color. |
-| `active_bg = "#282a36"' | Active window name background color. |
-| `active_underline = "#88c0d0"' | Active window name underline color |
-| `inactive_text_color = "#44475a"' | Inactive window name foreground color. |
-| `inactive_bg = "#282a36"' | Inactive window name background color. |
-| `inactive_underline = "#44475a"' | Inactive windows name underline color. |
+| `active_text_color = "#88c0d0"` | Active window name foregound color. |
+| `active_bg = "#282a36"` | Active window name background color. |
+| `active_underline = "#88c0d0"` | Active window name underline color |
+| `inactive_text_color = "#44475a"` | Inactive window name foreground color. |
+| `inactive_bg = "#282a36"` | Inactive window name background color. |
+| `inactive_underline = "#44475a"` | Inactive windows name underline color. |
 
 | Name options | Description | 
 | --- | --- | 
