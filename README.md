@@ -36,8 +36,8 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 | `forbidden_classes` | List of forbidden classes, add the classes of windows to be ignored by the script.
 | `text_case_option` | Default: Choose from "normal", "uppercase", "lowercase", "capitalized". see text case options table for more information. |
 
+###### Global variables default values
 ```ini
-# Global variables default values
 use_styling = True
 use_active_underline = True
 use_inactive_underline = False
@@ -47,7 +47,8 @@ char_limit = 20
 separator = "."
 name_option = "application_name"
 forbidden_classes = ["polybar"]
-text_case_option = "normal"```
+text_case_option = "normal"
+```
 
 | Styling variables | Description |
 | --- | --- |
