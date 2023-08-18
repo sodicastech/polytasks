@@ -65,7 +65,8 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 * Make the script and config executable with `chmod +x ~/.config/polybar/scripts/polytasks*`
 * Change any setting you wish from polytasks_config.py
 
-## Configuring Polybar (single monitor)
+## Configuring Polybar (single monitor*)
+<sub>* for single workspace</sub>
 
 * Open terminal and type `xprop -spy' and press enter, it will ask you to target any open window, once a window is targeted it will display information on your terminal. look for _NET_WM_DESKTOP(CARDINAL), this will be your $Desktop_ID
 * Press Ctrl + C on terminal to terminate xprop.
