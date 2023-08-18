@@ -4,6 +4,8 @@
 inpired by the work of [uniquepointer](https://github.com/uniquepointer) on his [polywins](https://github.com/uniquepointer/polywins) script written in bash.
 
 ## Requirements
+### Python Libraries
+
 | Library | How to install |
 | --- | --- |
 | gi | pip install PyGObject |
@@ -39,13 +41,41 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 
 | Name options | Description | 
 | --- | --- | 
-| `window_title` | Display current window title. | 
-| `window_class` | Display the windows class. | 
-| `application_name` | Display application name, tries to get the application name from its *.desktop file if can't find displays the window class. |
+| window_title | Display current window title. | 
+| window_class | Display the windows class. | 
+| application_name | Display application name, tries to get the application name from its *.desktop file if can't find displays the window class. |
 
 | Text case options | Description | 
 | --- | --- | 
-| `normal` | Display all windows name as it comes from the system. | 
-| `uppercase` | Display all windows name in uppercase. | 
-| `lowercase` | Display all windows name in lowercase. | 
-| `capitalized` | Display all windows name capitalized, only the first letter of the window name with multiple words will be capitalized. |
+| normal | Display all windows name as it comes from the system. | 
+| uppercase | Display all windows name in uppercase. | 
+| lowercase | Display all windows name in lowercase. | 
+| capitalized | Display all windows name capitalized, only the first letter of the window name with multiple words will be capitalized. |
+
+## Installing
+
+* Save `polytasks.py`, for example to `~/.config/polybar/scripts`
+* Save `polytasks_config.py` to the same folder as `polytaks.py`
+* Make the script and config executable with `chmod +x ~/.config/polybar/scripts/polytasks*`
+* Change any setting you wish from polytasks_config.py
+
+## Configuring Polybar (single monitor)
+
+* Open terminal and type `xprop
+* Add the following module to your polybar config:
+
+```ini
+  [module/polytasks]
+type = custom/script
+exec = ~/.config/polybar/scripts/polywins.sh  2>/dev/null
+format = <label>
+label = %output%
+label-padding = 1
+tail = true
+```
+* Add the module to one of your bars, and don't forget to set a line-size if you intend to use underline, for example like so:
+```ini
+[bar/your_bar_name]
+modules-center = polywins
+line-size = 2
+```
