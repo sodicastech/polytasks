@@ -87,7 +87,8 @@ tail = true
 modules-center = polytasks
 line-size = 2
 ```
-## Configuring Polybar (multiple monitors)
+## Configuring Polybar (multiple monitors*)
+<sub> single workspace per monitor</sub>
 
 * Open terminal and type `xprop -spy' and press enter, it will ask you to target any open window, target a window in your first desktop and once window is targeted it will display information on your terminal. look for _NET_WM_DESKTOP(CARDINAL), this will be your $Desktop_1_ID
 * Press Ctrl + C on terminal to terminate xprop.
