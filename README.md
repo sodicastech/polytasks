@@ -67,7 +67,8 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 
 ## Configuring Polybar (single monitor)
 
-* Open terminal and type `xprop -spy' and press enter, it will ask you to target any open window, once a window is target it will display information on your terminal. look for _NET_WM_DESKTOP(CARDINAL), this will be your $Desktop_ID
+* Open terminal and type `xprop -spy' and press enter, it will ask you to target any open window, once a window is targeted it will display information on your terminal. look for _NET_WM_DESKTOP(CARDINAL), this will be your $Desktop_ID
+* Press Ctrl + C on terminal to terminate xprop.
 * Add the following module to your polybar config replacing the $Desktop_ID with your own:
 
 ```ini
@@ -83,5 +84,43 @@ tail = true
 ```ini
 [bar/your_bar_name]
 modules-center = polytasks
+line-size = 2
+```
+## Configuring Polybar (multiple monitors)
+
+* Open terminal and type `xprop -spy' and press enter, it will ask you to target any open window, target a window in your first desktop and once window is targeted it will display information on your terminal. look for _NET_WM_DESKTOP(CARDINAL), this will be your $Desktop_1_ID
+* Press Ctrl + C on terminal to terminate xprop.
+* Type again `xprop -spy' and press enter, it will ask you to target any open window, target a window in your second desktop and once window is targeted it will display information on your terminal. look for _NET_WM_DESKTOP(CARDINAL), this will be your $Desktop_2_ID
+* Press Ctrl + C on terminal to terminate xprop.
+* you can keep doing this for amount of monitors you have.
+* Add the following modules to your polybar config replacing the variables accordingly with your own results:
+
+```ini
+[module/polytasks-monitor1]
+type = custom/script
+exec = ~/.config/polybar/scripts/polywins.sh $Desktop_1_ID 2>/dev/null
+format = <label>
+label = %output%
+label-padding = 1
+tail = true
+
+[module/polytasks-monitor2]
+type = custom/script
+exec = ~/.config/polybar/scripts/polywins.sh $Desktop_2_ID 2>/dev/null
+format = <label>
+label = %output%
+label-padding = 1
+tail = true
+```
+* Add the module to one of your bars, and don't forget to set a line-size if you intend to use underline, for example like so:
+```ini
+[bar/your_monitor1_bar_name]
+inherit = your_bar_name
+modules-center = polytasks-monitor1
+line-size = 2
+
+[bar/your_monitor2_bar_name]
+inherit = your_bar_name
+modules-center = polytasks-monitor2
 line-size = 2
 ```
