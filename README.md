@@ -3,6 +3,8 @@
 
 inpired by the work of [uniquepointer](https://github.com/uniquepointer) on his [polywins](https://github.com/uniquepointer/polywins) script written in bash.
 
+Since I use i3 as my window manager, I haven't implemented features for floating window managers but I do plan to get around to testing it in openbox and implementing features like the ones present in the polywins script.
+
 ## Dependencies
 ##### Packages
 | Package | How to install (Fedora) | How to install (Ubuntu) | 
