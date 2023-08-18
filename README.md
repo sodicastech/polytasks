@@ -6,6 +6,7 @@ inpired by the work of [uniquepointer](https://github.com/uniquepointer) on his 
 ## Requirements
 ##### Packages
 | Package | How to install (Fedora) | How to install (Ubuntu) | 
+| --- | --- | --- |
 | pip | sudo dnf install python3-pip | sudo apt install python3-pip |
 | xprop | sudo dnf install xprop | I'll check and update here since I don't user ubuntu |
 
