@@ -7,6 +7,4 @@ inpired by the work of [uniquepointer](https://github.com/uniquepointer) on his 
 | --- | --- |
 | gi | pip install PyGObject |
 | ewmh | pip install ewmh |
-2. Second item
-4. Third item
-5. Fourth item 
+| pyxdg | p install pyxdg |
