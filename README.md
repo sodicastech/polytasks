@@ -1,0 +1,2 @@
+# polytasks
+A Polybar TaskManager
