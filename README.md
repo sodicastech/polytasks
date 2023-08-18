@@ -24,7 +24,6 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 | `max_windows = 10` | Maximum number of window names to display |
 | `char_limit = 20` | Maximum number of characters to display per window name |
 | `separator = "."` | Separator between window names |
-| `name_option = "application_name"` | Default: Choose from "window_title", "window_class", "application_name". 
- | Option | Description | | --- | --- | | `window_title` | Display current window title. | | `window_class` | Display the windows class. | | application_name | Display application name, tries to get the application name from its *.desktop file if can't find displays the window class. | |
+| `name_option = "application_name"` | Default: Choose from "window_title", "window_class", "application_name". see name options table bellow for more information |
 | `forbidden_classes = ["polybar"]` | List of forbidden classes
 | `text_case_option = "normal"` | Default: Choose from "normal", "uppercase", "lowercase", "capitalized" |
