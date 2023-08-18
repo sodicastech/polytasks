@@ -16,6 +16,7 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 
 
 | Setting | Description |
+| --- | --- |
 | 'use_styling = True' | Set to False to disable styling |
 | 'use_active_underline = True' | Set to False to disable styling |
 | 'use_inactive_underline = True' | Set to False to disable styling |
