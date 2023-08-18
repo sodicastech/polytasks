@@ -28,8 +28,15 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 | `forbidden_classes = ["polybar"]` | List of forbidden classes, add the classes of windows to be ignored by the script.
 | `text_case_option = "normal"` | Default: Choose from "normal", "uppercase", "lowercase", "capitalized". see text case options table for more information. |
 
-| Name Options | Description | 
+| Name options | Description | 
 | --- | --- | 
 | `window_title` | Display current window title. | 
 | `window_class` | Display the windows class. | 
 | `application_name` | Display application name, tries to get the application name from its *.desktop file if can't find displays the window class. |
+
+| Text case options | Description | 
+| --- | --- | 
+| `normal` | Display all windows name as it comes from the system. | 
+| `uppercase` | Display all windows name in uppercase. | 
+| `lowercase` | Display all windows name in lowercase. | 
+| `capitalized` | Display all windows name capitalized, only the first letter of the window name with multiple words will be capitalized. |
