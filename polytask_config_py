@@ -1,0 +1,52 @@
+# Global variables
+use_styling = True # Set to False to disable styling
+use_active_underline = True # Set to False to disable styling
+use_inactive_underline = False # Set to False to disable styling
+add_icon = True # Set to True to add icons to window names
+max_windows = 10 # Maximum number of windows to display
+char_limit = 20 # Maximum number of characters to display
+separator = "." # Separator between window names
+name_option = "application_name" # Default: Choose from "window_title", "window_class", "application_name"
+forbidden_classes = ["polybar", "conky", "gmrun"] # List of forbidden classes
+text_case_option = "normal" # Default: Choose from "normal", "uppercase", "lowercase", "capitalized"
+
+# Global style variables
+active_text_color = "#88c0d0"
+active_bg = "#282a36"
+active_underline = "#88c0d0"
+inactive_text_color = "#44475a"
+inactive_bg = "#282a36"
+inactive_underline = "#44475a"
+
+# Define a dictionary to map application names to nerd fonts icons
+icon_list = {
+    "firefox": "󰈹",
+    "whatsapp": "󰖣",
+    "code": "󰨞",
+    "visual studio code": "󰨞",
+    "kitty": "󰆍",
+    "xfce terminal": "󰆍",
+    "alacritty": "󰆍",
+    "slack": "󰒱",
+    "cider": "󰀵",
+    "thunar": "󰪶",
+    "thunar file manager": "󰪶",
+    "xarchiver": "",
+    "font manager": "󰛖",
+    "font viewer": "󰛖",
+    "google-chrome": "󰊯",
+    "chrome": "󰊯",
+    "pulseaudio volume control": "󰴸",
+    "steam": "󰓓",
+    "termius": "󰆍",
+    "blueman-manager": "󰂯",
+    "disks": "󰋊",
+    "spotify": "󰓇",
+    "system-config-printer.py": "󰐪",
+    "thunderbird": "󰺻",
+    "discord": "󰙯",
+    "onlyoffice desktop editors": "󰽘",
+    "mpv media player": "󰽘",
+    "microsoft-edge": "󰇩",
+    "brave-browser": "",
+}
