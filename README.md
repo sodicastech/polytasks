@@ -17,9 +17,9 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 
 | Setting | Description |
 | --- | --- |
-| `use_styling = True` | Set to False to disable styling |
-| `use_active_underline = True` | Set to False to disable styling |
-| `use_inactive_underline = True` | Set to False to disable styling |
+| `use_styling = True` | set False to disable window name styling |
+| `use_active_underline = True` |  to False to disable underlining the active window name. |
+| `use_inactive_underline = False` | Set to True to enable underlining inactive window names. |
 | `add_icon = True` | Set to True to add icons to window names |
 | `max_windows = 10` | Maximum number of windows to display |
 | `char_limit = 20` | Maximum number of characters to display |
