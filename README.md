@@ -16,7 +16,7 @@ inpired by the work of [uniquepointer](https://github.com/uniquepointer) on his 
 | --- | --- |
 | gi | pip install PyGObject |
 | ewmh | pip install ewmh |
-| pyxdg | p install pyxdg |
+| pyxdg | pip install pyxdg |
 
 
 ## Configuration
