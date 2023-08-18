@@ -4,6 +4,11 @@
 inpired by the work of [uniquepointer](https://github.com/uniquepointer) on his [polywins](https://github.com/uniquepointer/polywins) script written in bash.
 
 ## Requirements
+##### Packages
+| Package | How to install (Fedora) | How to install (Ubuntu) | 
+| pip | sudo dnf install python3-pip | sudo apt install python3-pip |
+| xprop | sudo dnf install xprop | I'll check and update here since I don't user ubuntu |
+
 ##### Python Libraries
 
 | Library | How to install |
@@ -61,13 +66,13 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 
 ## Configuring Polybar (single monitor)
 
-* Open terminal and type `xprop
-* Add the following module to your polybar config:
+* Open terminal and type `xprop -spy' and press enter, it will ask you to target any open window, once a window is target it will display information on your terminal. look for _NET_WM_DESKTOP(CARDINAL), this will be your $Desktop_ID
+* Add the following module to your polybar config replacing the $Desktop_ID with your own:
 
 ```ini
   [module/polytasks]
 type = custom/script
-exec = ~/.config/polybar/scripts/polywins.sh  2>/dev/null
+exec = ~/.config/polybar/scripts/polywins.sh $Desktop_ID 2>/dev/null
 format = <label>
 label = %output%
 label-padding = 1
@@ -76,6 +81,6 @@ tail = true
 * Add the module to one of your bars, and don't forget to set a line-size if you intend to use underline, for example like so:
 ```ini
 [bar/your_bar_name]
-modules-center = polywins
+modules-center = polytasks
 line-size = 2
 ```
