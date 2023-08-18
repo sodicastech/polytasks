@@ -24,10 +24,10 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 | `char_limit = 20` | Maximum number of characters to display per window name |
 | `separator = "."` | Separator between window names |
 | `name_option = "application_name"` | Default: Choose from "window_title", "window_class", "application_name". see name options table bellow for more information |
-| `forbidden_classes = ["polybar"]` | List of forbidden classes
-| `text_case_option = "normal"` | Default: Choose from "normal", "uppercase", "lowercase", "capitalized" |
+| `forbidden_classes = ["polybar"]` | List of forbidden classes, add the classes of windows to be ignored by the script.
+| `text_case_option = "normal"` | Default: Choose from "normal", "uppercase", "lowercase", "capitalized". see text case options table for more information. |
 
-| Option | Description | 
+| Name Options | Description | 
 | --- | --- | 
 | `window_title` | Display current window title. | 
 | `window_class` | Display the windows class. | 
