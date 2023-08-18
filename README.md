@@ -17,13 +17,14 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 
 | Setting | Description |
 | --- | --- |
-| `use_styling = True` | set False to disable window name styling |
-| `use_active_underline = True` |  to False to disable underlining the active window name. |
+| `use_styling = True` | Set False to disable window name styling |
+| `use_active_underline = True` |  Set to False to disable underlining the active window name. |
 | `use_inactive_underline = False` | Set to True to enable underlining inactive window names. |
-| `add_icon = True` | Set to True to add icons to window names |
-| `max_windows = 10` | Maximum number of windows to display |
-| `char_limit = 20` | Maximum number of characters to display |
+| `add_icon = True` | If True prepends a nerd fonts icon char to the front of the window names if icon provided on icon_list (see icon_list for more information) |
+| `max_windows = 10` | Maximum number of window names to display |
+| `char_limit = 20` | Maximum number of characters to display per window name |
 | `separator = "."` | Separator between window names |
-| `name_option = "application_name"` | Default: Choose from "window_title", "window_class", "application_name" |
+| `name_option = "application_name"` | Default: Choose from "window_title", "window_class", "application_name". 
+ | Option | Description | | --- | --- | | `window_title` | Display current window title. | | `window_class` | Display the windows class. | | application_name | Display application name, tries to get the application name from its *.desktop file if can't find displays the window class. | |
 | `forbidden_classes = ["polybar"]` | List of forbidden classes
 | `text_case_option = "normal"` | Default: Choose from "normal", "uppercase", "lowercase", "capitalized" |
