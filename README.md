@@ -23,7 +23,7 @@ inpired by the work of [uniquepointer](https://github.com/uniquepointer) on his 
 
 polytasks requires a configuration file called polytasks_config.py in the same folder as the polytasks.py script.
 
-| Setting | Description |
+| Global variables | Description |
 | --- | --- |
 | `use_styling` | Set False to disable window name styling. |
 | `use_active_underline` |  Set to False to disable underlining the active window name. |
@@ -50,7 +50,7 @@ forbidden_classes = ["polybar"]
 text_case_option = "normal"
 ```
 
-| Styling variables | Description |
+| Global styling variables | Description |
 | --- | --- |
 | `active_text_color = "#88c0d0"` | Active window name foregound color. |
 | `active_bg = "#282a36"` | Active window name background color. |
@@ -58,6 +58,56 @@ text_case_option = "normal"
 | `inactive_text_color = "#44475a"` | Inactive window name foreground color. |
 | `inactive_bg = "#282a36"` | Inactive window name background color. |
 | `inactive_underline = "#44475a"` | Inactive windows name underline color. |
+
+###### Global style variables default values
+```ini
+active_text_color = "#88c0d0"
+active_bg = "#282a36"
+active_underline = "#88c0d0"
+inactive_text_color = "#44475a"
+inactive_bg = "#282a36"
+inactive_underline = "#44475a"
+```
+
+
+| Icon list | Description |
+| --- | --- |
+| icon_list = { "firefox": "󰈹" } | list of class names and the desired nerd font char icon to be added |
+
+###### Current default icon list provided with the script
+```ini
+icon_list = {
+    "firefox": "󰈹",
+    "whatsapp": "󰖣",
+    "code": "󰨞",
+    "visual studio code": "󰨞",
+    "kitty": "󰆍",
+    "xfce terminal": "󰆍",
+    "alacritty": "󰆍",
+    "slack": "󰒱",
+    "cider": "󰀵",
+    "thunar": "󰪶",
+    "thunar file manager": "󰪶",
+    "xarchiver": "",
+    "font manager": "󰛖",
+    "font viewer": "󰛖",
+    "google-chrome": "󰊯",
+    "chrome": "󰊯",
+    "pulseaudio volume control": "󰴸",
+    "steam": "󰓓",
+    "termius": "󰆍",
+    "blueman-manager": "󰂯",
+    "disks": "󰋊",
+    "spotify": "󰓇",
+    "system-config-printer.py": "󰐪",
+    "thunderbird": "󰺻",
+    "discord": "󰙯",
+    "onlyoffice desktop editors": "󰽘",
+    "mpv media player": "󰽘",
+    "microsoft-edge": "󰇩",
+    "brave-browser": "",
+}
+```
 
 | Name options | Description | 
 | --- | --- | 
