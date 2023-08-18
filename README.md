@@ -1,5 +1,5 @@
 # Polytasks: a polybar TaskManager for multiple monitors*.
-*(also works for single monitor).
+<sub> *(also works for single monitor).</sub>
 
 inpired by the work of [uniquepointer](https://github.com/uniquepointer) on his [polywins](https://github.com/uniquepointer/polywins) script written in bash.
 
