@@ -115,12 +115,10 @@ tail = true
 * Add the module to one of your bars, and don't forget to set a line-size if you intend to use underline, for example like so:
 ```ini
 [bar/your_monitor1_bar_name]
-inherit = your_bar_name
 modules-center = polytasks-monitor1
 line-size = 2
 
 [bar/your_monitor2_bar_name]
-inherit = your_bar_name
 modules-center = polytasks-monitor2
 line-size = 2
 ```
