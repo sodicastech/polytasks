@@ -17,7 +17,7 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 
 | Setting | Description |
 | --- | --- |
-| `use_styling = True` | Set False to disable window name styling |
+| `use_styling = True` | Set False to disable window name styling. |
 | `use_active_underline = True` |  Set to False to disable underlining the active window name. |
 | `use_inactive_underline = False` | Set to True to enable underlining inactive window names. |
 | `add_icon = True` | If True prepends a nerd fonts icon char to the front of the window names if icon provided on icon_list (see icon_list for more information) |
@@ -27,6 +27,15 @@ polytasks requires a configuration file called polytasks_config.py in the same f
 | `name_option = "application_name"` | Default: Choose from "window_title", "window_class", "application_name". see name options table bellow for more information |
 | `forbidden_classes = ["polybar"]` | List of forbidden classes, add the classes of windows to be ignored by the script.
 | `text_case_option = "normal"` | Default: Choose from "normal", "uppercase", "lowercase", "capitalized". see text case options table for more information. |
+
+| Styling variables | Description |
+| --- | --- |
+| `active_text_color = "#88c0d0"' | Active window name foregound color. |
+| `active_bg = "#282a36"' | Active window name background color. |
+| `active_underline = "#88c0d0"' | Active window name underline color |
+| `inactive_text_color = "#44475a"' | Inactive window name foreground color. |
+| `inactive_bg = "#282a36"' | Inactive window name background color. |
+| `inactive_underline = "#44475a"' | Inactive windows name underline color. |
 
 | Name options | Description | 
 | --- | --- | 
